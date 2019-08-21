@@ -6,11 +6,11 @@ branches:
   only:
     - master
 
-# Travis CI 서버의 cache 활성화
+# Travis CI
 cache:
   directories:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-# clean 후  build - build 시 자동으로 test 수행
+# clean 
 script: "./gradlew clean build"
