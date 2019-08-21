@@ -1,16 +1,5 @@
 language: java
-jdk:
-  - openjdk8
+jdk: oraclejdk8
 
-branches:
-  only:
-    - master
-
-# Travis CI
-cache:
-  directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.gradle'
-
-# clean 
-script: "./gradlew clean build"
+before_install:
+  - chmod +x mvnw
